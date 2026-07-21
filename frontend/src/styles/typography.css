@@ -1,0 +1,149 @@
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-xl);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+h4 {
+  font-family: var(--font-heading);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+h5 {
+  font-family: var(--font-heading);
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--font-md);
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+small {
+  font-family: var(--font-body);
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+label {
+  font-family: var(--font-body);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+}
+
+code {
+  background: rgba(59, 130, 246, 0.08);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  font-family: var(--font-mono);
+  color: var(--primary-soft);
+}
+
+.evidence-tag,
+.citation-tag {
+  font-family: var(--font-mono);
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+.section-title {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: var(--space-2);
+}
+
+.section-subtitle {
+  font-size: var(--font-md);
+  color: var(--text-muted);
+  margin-bottom: var(--space-7);
+  line-height: 1.6;
+}
+
+/* ===========================
+   CARD TITLES
+=========================== */
+
+.card-title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+
+.card-subtitle {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+/* ===========================
+   GRADIENT TEXT
+=========================== */
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===========================
+   METRICS
+=========================== */
+
+.metric-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.metric-label {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+  letter-spacing: 0.02em;
+}

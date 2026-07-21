@@ -1,0 +1,129 @@
+.pm-sidebar {
+  width: 260px;
+  height: 100vh;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20px;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.pm-logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:48px;
+    text-align:center;
+}
+
+.pm-logo-img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    display:block;
+    transition:.3s ease;
+}
+
+.pm-logo-img:hover{
+    transform:scale(1.05);
+}
+
+.pm-logo h2{
+    margin:0;
+    color:var(--text-primary);
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.02em;
+}
+
+.pm-logo span{
+    color:var(--text-muted);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    line-height:1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.pm-nav{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.pm-nav-item{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    text-decoration:none;
+
+    color:var(--text-muted);
+
+    padding:14px 16px;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+    border:1px solid transparent;
+
+    font-size:15px;
+
+    font-weight:500;
+}
+
+.pm-nav-item svg{
+    width:20px;
+    height:20px;
+
+    color:var(--text-muted);
+
+    transition:.25s;
+}
+
+.pm-nav-item:hover{
+
+    color:white;
+
+    border:1px solid var(--accent);
+
+    background:rgba(0,229,255,.04);
+
+}
+
+.pm-nav-item:hover svg{
+
+    color:var(--accent);
+
+}
+
+.pm-nav-item.active{
+
+    color:white;
+
+    border:1px solid var(--accent);
+
+    background:rgba(0,229,255,.08);
+
+    box-shadow:0 0 18px rgba(0,229,255,.15);
+
+}
+
+.pm-nav-item.active svg{
+
+    color:var(--accent);
+
+}

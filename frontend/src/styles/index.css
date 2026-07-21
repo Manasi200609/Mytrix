@@ -1,0 +1,160 @@
+@import "./variables.css";
+@import "./typography.css";
+@import "./scrollbar.css";
+@import "./utilities.css";
+@import "./animations.css";
+@import "./forms.css";
+@import "./components.css";
+@import "./pages.css";
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+   HTML
+========================= */
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:var(--font-body);
+
+    background:var(--bg-primary);
+
+    color:var(--text-primary);
+
+    min-height:100vh;
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+    background-image:
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59,130,246,.08), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(56,189,248,.05), transparent);
+
+}
+
+/* =========================
+   ROOT
+========================= */
+
+#root{
+
+    min-height:100vh;
+
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+    transition:var(--transition);
+
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* =========================
+   TRANSITIONS
+========================= */
+
+button,
+input,
+textarea,
+.card,
+.panel{
+
+    transition:var(--transition);
+
+}

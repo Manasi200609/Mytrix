@@ -1,0 +1,78 @@
+.pm-modal-overlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pm-modal{
+  width: min(1100px, 90vw);
+  max-height: 88vh;
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, .45);
+  animation: modalFade .25s ease;
+}
+
+.pm-modal-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.pm-modal-header h2{
+  color: #fff;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pm-close-btn{
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #1f2937;
+  color: white;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.pm-close-btn:hover{
+  background: #374151;
+}
+
+.pm-modal-body{
+  padding: 28px;
+  overflow-y: auto;
+  max-height: calc(88vh - 84px);
+}
+
+.pm-modal-body::-webkit-scrollbar{
+  width: 8px;
+}
+
+.pm-modal-body::-webkit-scrollbar-thumb{
+  background: #374151;
+  border-radius: 10px;
+}
+
+@keyframes modalFade{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(.98);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

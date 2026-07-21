@@ -1,0 +1,42 @@
+.pm-app {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.pm-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.pm-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-8);
+  background:
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(59, 130, 246, 0.06), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(56, 189, 248, 0.04), transparent 45%),
+    var(--bg-primary);
+}
+
+.pm-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pm-content::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+}
+
+.pm-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .pm-content {
+    padding: var(--space-5);
+  }
+}
